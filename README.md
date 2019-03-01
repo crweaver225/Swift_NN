@@ -5,6 +5,9 @@
 
 Swift_NN is a proof of concept app that utilizes a convolutional neural network programmed completely in Swift with no libraries to recignize single digit numbers within images. All of the calculations, including matrix multiplication, and splicing of multidimensional data is done using basic swift code. 
 
+![image1](https://github.com/crweaver225/Swift_NN/blob/master/screenshots/ss1.png?raw=true)
+![image3](https://github.com/crweaver225/Swift_NN/blob/master/screenshots/ss3.png?raw=true)
+
 This project was done in conjunction with another project (https://github.com/crweaver225/CAINN) which uses a program coded in Python to train the neural network with no libraries other than Numpy. After training, the neural net is outputted in JSON and moved to this xcode project where Swift_NN parses the JSON and constructs a completley Swifty neural network. 
 
 Theoretically, my Swift_Neural_Network class could work like a black box, parsing the provided neural network json and applying the values to an instance of the class like so:
