@@ -117,7 +117,7 @@ class ImageTakerViewController: UIViewController, UIImagePickerControllerDelegat
             }
             picker.dismiss(animated: true, completion: {
                 DispatchQueue.main.async {
-                    if let results = self.swiftNN.executeConvolutionalNeuralNetwork(input: [arrayPixelData]) as? [[Double]] {
+                    if let results = self.swiftNN.executeNeuralNetwork(input: [arrayPixelData]) as? [[Double]] {
                         print(results)
                         self.pickNumber(results: results.first!)
                     }

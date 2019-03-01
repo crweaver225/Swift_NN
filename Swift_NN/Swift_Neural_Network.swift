@@ -278,7 +278,7 @@ class Swift_Neural_Network {
         }
     }
     
-    func executeConvolutionalNeuralNetwork(input : [Matrix]) -> Any {
+    func executeNeuralNetwork(input : [Matrix]) -> Any {
         var current_results : Any!
         var layerIndex : Int = 0
         var filterIndex : Int = 0
@@ -313,32 +313,6 @@ class Swift_Neural_Network {
             layerIndex += 1
         }
         return current_results
-    }
- 
-    func executeNueralNetwork(input : Matrix) {
-        var current_results : Matrix = [[]]
-        var layerIndex : Int = 0
-        for layer in self.layers {
-            switch layer {
-            case .Convoluted:
-                print("Convolutional")
-            case .Maxpool:
-                print("Maxpool")
-            case .Flatten:
-                print("Flatten")
-            case .Input:
-                print("Input")
-                current_results = input
-                layerIndex -= 1
-            case .Fully_Connected:
-                current_results = forwardPassDenseLayer(input: current_results, activation_function: self.activation_functions[layerIndex], weights: self.weights[layerIndex])
-                print("Dense")
-            case .Recurrent:
-                print("Recurrent")
-            }
-            layerIndex += 1
-        }
-        print(current_results)
     }
     
     func forwardPassDenseLayer(input : Matrix, activation_function : Activation_Function, weights : Matrix) -> Matrix {
