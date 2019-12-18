@@ -3,7 +3,7 @@
 
 # Swift_NN
 
-Swift_NN is a proof of concept app that utilizes a convolutional neural network programmed completely in Swift with no libraries to recignize single digit numbers within images. All of the calculations, including matrix multiplication, and splicing of multidimensional data is done using basic swift code. 
+Swift_NN is a proof of concept app that utilizes a convolutional neural network programmed completely in Swift with no libraries to recognize single digit numbers within images. All of the calculations, including matrix multiplication, and splicing of multidimensional data is done using basic swift code. 
 
 ![image1](https://github.com/crweaver225/Swift_NN/blob/master/screenshots/ss1.png?raw=true)
 ![image3](https://github.com/crweaver225/Swift_NN/blob/master/screenshots/ss3.png?raw=true)
